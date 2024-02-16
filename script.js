@@ -3,7 +3,20 @@ console.log(keys);
 let s = "";
 let length =0 ;
 let attempt =1; 
-let word = "LIGHT"
+const fiveLetterWords = [
+    "Apple", "Baker", "Candy", "Daisy", "Eagle",
+    "Fudge", "Grape", "Hazel", "Igloo", "Jelly",
+    "Kings", "Lemon", "Magic", "Noble", "Olive",
+    "Piano", "Queen", "Ruler", "Salsa", "Tiger",
+    "Ultra", "Virus", "Whale", "Xerox", "Youth",
+    "Zebra", "Aloha", "Beach", "Charm", "Dance",
+    "Easel", "Flame", "Globe", "Happy", "Inbox",
+    "Juice", "Kitty", "Lucky", "Money", "Novel",
+    "Oasis", "Party", "Quick", "Radar", "Sunny",
+    "Tasty", "Unity", "Vivid", "Water", "Xenon",
+    "Young", "Zealot"
+].map(word => word.toUpperCase());
+let word = fiveLetterWords[Math.floor(Math.random() * 50 )];
 
 keys.forEach((key)=>{
     key.addEventListener('click',()=>{
