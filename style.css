@@ -1,4 +1,14 @@
+div{
+    margin: 0px;
+    font-family:Montserrat, "Open Sans", sans-serif;
+}
 
+.heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family:Montserrat, "Open Sans", sans-serif;
+}
 
 .row{
     display: flex;
@@ -25,26 +35,31 @@
 }
 
 
-.keyboard{
 
-}
+
 .key{
     background-color: #dce1ed;
     height: 3rem;
-    width: 3rem;
+    width: 3.3rem;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.208);
+    font-size: 1.1rem;
+    
 }
 .key2{
-    height: 3.45rem;
-    width: 3.45em;
+    height: 3rem;
+    width: 3.66rem;
 }
-
+.key3{
+    height: 3rem;
+    width: 3rem;
+}
 .special{
     width: 5rem;
+    padding: 0px 8px;
 }
 
 .key:hover{
@@ -53,7 +68,7 @@
 
 .krow{
     display: flex;
-    gap:20px;
+    gap:5px;
     margin:1rem;
     justify-content: center;
 }
@@ -75,6 +90,17 @@
     background-color: #f2c236 ;
     border: 2px solid #f2c236  ;
 }
+.kgray{
+    background-color: #a4aec4;
+    color:white;
+}
+
+.kgreen{
+    background-color: #79b750 ;
+}
+.kyellow{
+    background-color: #f2c236 ;
+}
 
 .gray:hover{
     background-color: #a4aec4;
@@ -86,4 +112,19 @@
 .yellow:hover{
     background-color: #f2c236 ;
     border: 2px solid #f2c236  ;
+}
+
+@media only screen and (max-width: 767px) {
+    .keyboard{
+        transform: scale(1.1); 
+        margin-bottom: 100px;
+        font-size: 1rem;
+    }
+    .bahar{
+        width: 85vw;
+        margin-right:15vw;
+        position: relative;
+        left: 2vw;
+    }
+    
 }
