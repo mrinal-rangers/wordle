@@ -2,19 +2,20 @@
 
 .row{
     display: flex;
-    gap:20px;
+    gap:5px;
     margin:1rem;
 }
 .column{
-    border: 4px solid #dee1e9;
+    border: 2px solid #dee1e9;
     background-color: #fbfcff;
     border-radius: 10px;;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.8rem;
     font-weight:600 ;
     font-family:Montserrat, "Open Sans", sans-serif;;
 }
@@ -35,23 +36,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.208);
+    box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.208);
 }
 .key2{
-    background-color: #dce1ed;
     height: 3.45rem;
     width: 3.45em;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.208);
-    align-items: center;
 }
 
 .special{
     width: 5rem;
 }
 
+.key:hover{
+    background-color: #c9ccd4;
+}
 
 .krow{
     display: flex;
@@ -61,5 +59,31 @@
 }
 
 .selected{
-    border: 4px solid #a7adbf;
+    border: 2 solid #a7adbf;
+}
+.gray{
+    background-color: #a4aec4;
+    color:white;
+    border: 2px solid #a4aec4 ;
+}
+
+.green{
+    background-color: #79b750 ;
+    border: 2px solid #79b750  ;
+}
+.yellow{
+    background-color: #f2c236 ;
+    border: 2px solid #f2c236  ;
+}
+
+.gray:hover{
+    background-color: #a4aec4;
+}
+.green:hover{
+    background-color: #79b750 ;
+    border: 2px solid #79b750  ;
+}
+.yellow:hover{
+    background-color: #f2c236 ;
+    border: 2px solid #f2c236  ;
 }
