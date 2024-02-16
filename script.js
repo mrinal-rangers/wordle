@@ -57,6 +57,20 @@ keys.forEach((key)=>{
                     setTimeout(()=>{
                         alert("Congrats , You Won");
                     },500)
+                    setTimeout(()=>{
+                        keys.forEach((key1)=>{
+                            key1.classList.remove('kgray', 'kyellow', 'kgreen'); 
+                        })
+                        for(let i=1;i<=6;i++){
+                            const that_row1 = document.querySelector(`.row${i}`);
+                            for(let j=1;j<=5;j++){
+                                const that_col1 = that_row1.querySelector(`.column${j}`);
+                                that_col1.classList.remove('gray', 'yellow','green');
+                                that_col1.innerHTML="";
+                            }
+                        }
+                        attempt = 0;
+                    },600)
                 }
 
 
